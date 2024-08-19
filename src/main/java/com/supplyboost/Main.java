@@ -6,9 +6,9 @@ import java.sql.*;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
-    private static String url = "jdbc:sqlserver://127.0.0.1:1433;databaseName=tasknotes";
-    private static String name = "sa";
-    private static String password = "Peralnq1";
+    private static final String url = "jdbc:sqlserver://127.0.0.1:1433;databaseName=tasknotes";
+    private static final String name = "sa";
+    private static final String password = "Peralnq1";
     public static void main(String[] args) {
 
         try (Connection connection = DriverManager.getConnection(url, name, password);
