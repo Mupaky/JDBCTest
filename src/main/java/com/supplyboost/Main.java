@@ -20,7 +20,6 @@ public class Main {
             props.load(input);
 
             Class.forName(props.getProperty("db.driver"));
-
             try (Connection connection = DriverManager.getConnection(props.getProperty("db.url"),
                     props.getProperty("db.username"), props.getProperty("db.password"));
                  Statement statement = connection.createStatement();
